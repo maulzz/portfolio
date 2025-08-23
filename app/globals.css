@@ -4,6 +4,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --swiper-theme-color: #f97316;
+  --swiper-navigation-color: #f97316;
+  --swiper-pagination-color: #f97316;
+  --swiper-navigation-size: 30px;
 }
 
 @theme inline {
