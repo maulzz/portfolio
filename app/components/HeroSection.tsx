@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaLinkedin,FaGithub } from "react-icons/fa";
 
 const SocialIcon = ({
   href,
@@ -16,7 +16,7 @@ const SocialIcon = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-neutral-600 transition-colors hover:text-orange-500 dark:text-neutral-400 dark:hover:text-orange-500"
+    className="text-neutral-600 transition-colors hover:text-orange-500 dark:text-neutral-400 dark:hover:text-orange-500 hover:scale-120 duration-300"
   >
     {children}
   </a>
@@ -24,12 +24,12 @@ const SocialIcon = ({
 
 export default function HeroSection() {
   return (
-    <section className="container mx-auto flex min-h-screen items-center px-12">
+    <section id="hero" className="container mx-auto flex min-h-screen items-center px-8 sm:px-20">
       <div className="flex w-full flex-col-reverse items-center gap-12 md:flex-row">
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl font-bold md:text-6xl">
             Hi, i'm
-            <span className="text-orange-500"> Wildan Maulana H.</span> Junior
+            <span className="text-orange-500"> Wildan Maulana</span> Junior
             Developer
           </h1>
           <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
@@ -55,6 +55,9 @@ export default function HeroSection() {
             </SocialIcon>
             <SocialIcon href="https://linkedin.com/in/username">
               <FaLinkedin size={28} />
+            </SocialIcon>
+            <SocialIcon href="https://github.com/username">
+              <FaGithub size={28} />
             </SocialIcon>
           </div>
         </div>

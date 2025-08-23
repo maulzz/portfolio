@@ -7,9 +7,11 @@ import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
-  { href: '', label: 'Tentang Saya' },
-  { href: '', label: 'Proyek' },
-  { href: '', label: 'Kontak' },
+  { href: '#hero', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#education', label: 'Education' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
