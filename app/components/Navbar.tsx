@@ -7,16 +7,16 @@ import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
-  { href: '#about', label: 'Tentang Saya' },
-  { href: '#projects', label: 'Proyek' },
-  { href: '#contact', label: 'Kontak' },
+  { href: '', label: 'Tentang Saya' },
+  { href: '', label: 'Proyek' },
+  { href: '', label: 'Kontak' },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 p-4 bg-white dark:bg-neutral-900">
+    <nav className="sticky top-0 z-50 py-4 px-4 sm:px-12 ">
       <div className="container mx-auto flex items-center justify-between rounded-2xl bg-white/70 py-3 px-7 shadow-2xl backdrop-blur-sm dark:bg-gray-800/70">
         <Link href="/" className="text-xl font-bold text-gray-900 dark:text-gray-100">
           MaulzzStuDev
@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-gray-600 transition-colors hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500"
+              className="text-gray-600 font-semibold transition-colors hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500"
             >
               {link.label}
             </Link>
@@ -65,8 +65,8 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-lg text-gray-600 transition-colors hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500"
-              onClick={() => setIsOpen(false)} // Menutup sidebar saat link di-klik
+              className="text-lg text-gray-600 font-semibold transition-colors hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-500"
+              onClick={() => setIsOpen(false)} 
             >
               {link.label}
             </Link>
