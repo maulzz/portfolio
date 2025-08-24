@@ -16,7 +16,7 @@ export default function ContactSection() {
     setResult("Mengirim....");
     const formData = new FormData(event.currentTarget);
 
-    formData.append("access_key", "977cfeef-b9b5-4e03-83ff-accebe7e2592");
+    formData.append("access_key" , process.env.NEXT_PUBLIC_W3F_ACCESS_KEY!);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
