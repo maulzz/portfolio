@@ -70,7 +70,7 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="py-16 bg-gray-100 dark:bg-neutral-800/20"
+      className="py-24 bg-gray-100 dark:bg-neutral-800/20"
     >
       <div className="container mx-auto px-8 sm:px-20">
         <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">

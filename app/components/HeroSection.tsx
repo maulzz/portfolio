@@ -39,24 +39,24 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-8 flex justify-center gap-4 md:justify-start">
-            <Link href="#contact">
+            <Link href="#">
               <button className="bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600 rounded-lg">
-                Hire Me
+                Download CV
               </button>
             </Link>
           </div>
 
           <div className="mt-8 flex justify-center gap-6 md:justify-start">
-            <SocialIcon href="https://instagram.com/username">
+            <SocialIcon href="https://instagram.com/maulzz_studev">
               <FaInstagram size={28} />
             </SocialIcon>
-            <SocialIcon href="https://wa.me/6281234567890">
+            <SocialIcon href="https://wa.me/6285974905465">
               <FaWhatsapp size={28} />
             </SocialIcon>
             <SocialIcon href="https://linkedin.com/in/username">
               <FaLinkedin size={28} />
             </SocialIcon>
-            <SocialIcon href="https://github.com/username">
+            <SocialIcon href="https://github.com/maulzz">
               <FaGithub size={28} />
             </SocialIcon>
           </div>

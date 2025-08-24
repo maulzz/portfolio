@@ -12,13 +12,9 @@ export default function AboutSection() {
           </h2>
 
           <p className="mx-auto max-w-3xl text-center text-lg text-neutral-600 dark:text-neutral-400">
-            Saya adalah seorang Web Developer yang bersemangat dalam mengubah
-            ide-ide kreatif menjadi aplikasi web yang fungsional dan menarik
-            secara visual. Dengan fokus utama pada ekosistem JavaScript,
-            khususnya React dan Next.js, saya menikmati setiap proses dalam
-            memecahkan masalah dan membangun antarmuka pengguna yang intuitif.
-            Saat ini, saya terus memperluas pengetahuan saya ke ranah back-end
-            untuk menjadi developer yang lebih komprehensif.
+            Saya adalah seorang mahasiswa Teknologi Informasi Universitas Tidar. Saya lahir dan tinggal di Magelang. Saya memiliki minat yang besar dalam pengembangan perangkat lunak dan teknologi web.
+            Fokus utama saya adalah pada pengembangan back-end, namun saya juga memiliki pengalaman dalam pengembangan front-end. Dengan keterampilan yang saya miliki, saya berkomitmen untuk terus belajar dan berkembang di bidang ini,
+            terutama untuk membuat sebuah sistem yang relevan dan bermanfaat bagi pengguna.
           </p>
         </div>
       </div>

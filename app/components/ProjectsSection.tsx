@@ -19,7 +19,7 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {projectsData.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className='flex'>
-              <div className="group block overflow-hidden rounded-lg  shadow-md transition-all duration-300 hover:shadow-xl bg-gray-200/70 dark:bg-neutral-700/70">
+              <div className="group block overflow-hidden rounded-lg  shadow-md transition-all duration-300 hover:shadow-xl bg-gray-100 dark:bg-neutral-800/40">
                 <div className="relative h-56 w-full shrink-0 overflow-hidden">
                   <Image
                     src={project.images[0]}

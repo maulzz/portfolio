@@ -13,7 +13,7 @@ import {
   FaUnity,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiMysql, SiBlender, SiCanva } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiBlender, SiCanva, SiAdobeillustrator } from "react-icons/si";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
 
 const languagesAndFrameworks = [
@@ -44,6 +44,7 @@ const toolsAndTechnologies = [
     icon: <FaUnity className="h-8 w-8 text-gray-800 dark:text-gray-200" />,
   },
   { name: "Canva", icon: <SiCanva className="h-8 w-8 text-purple-400" /> },
+  { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="h-8 w-8 text-orange-900" /> },
 ];
 
 const SkillCard = ({ name, icon }: { name: string; icon: React.ReactNode }) => (
@@ -55,7 +56,7 @@ const SkillCard = ({ name, icon }: { name: string; icon: React.ReactNode }) => (
 
 export default function AboutSection() {
   return (
-    <section id="skills" className="py-12 ">
+    <section id="skills" className="py-24 ">
       <div className="container mx-auto px-8 sm:px-20">
         <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
           Skills & Tools

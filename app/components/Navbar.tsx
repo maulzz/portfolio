@@ -7,11 +7,11 @@ import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
-  { href: '#hero', label: 'About' },
+  { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
   { href: '#education', label: 'Education' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+
 ];
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 py-4 px-4 sm:px-12 ">
       <div className="container mx-auto flex items-center justify-between rounded-2xl bg-white/70 py-3 px-7 shadow-2xl backdrop-blur-sm dark:bg-gray-800/70">
         <Link href="/" className="text-xl font-bold text-gray-900 dark:text-gray-100">
-          MaulzzStuDev
+          Maulzz_Dev
         </Link>
         <div className="hidden items-center space-x-8 md:flex">
           {navLinks.map((link) => (
@@ -35,7 +35,7 @@ export default function Navbar() {
           ))}
           <Link href="#contact">
             <button className="rounded-full bg-orange-500 px-4 py-2 font-bold text-white transition-colors hover:bg-orange-600">
-              Hubungi Saya
+              Contact
             </button>
           </Link>
         </div>
