@@ -1,25 +1,26 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+// eslint.config.mjs
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const nextConfig = require('@next/eslint-plugin-next/configs/recommended');
+const { rules: reactRules } = require('eslint-plugin-react/configs/recommended');
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+/** @type {import('eslint').Linter.FlatConfig[]} */
+module.exports = [
   {
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,mts,cts,tsx,mtsx}'],
+    plugins: {
+      ...nextConfig.plugins,
+      react: require('eslint-plugin-react'),
+    },
+    rules: {
+      ...reactRules,
+      ...nextConfig.rules,
+      // ▼▼▼ TAMBAHKAN BARIS INI ▼▼▼
+      'react/no-unescaped-entities': 'off',
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
 ];
-
-export default eslintConfig;
