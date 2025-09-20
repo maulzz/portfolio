@@ -11,9 +11,10 @@ import {
   FaPython,
   FaGitAlt,
   FaUnity,
+  FaWordpress
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiMysql, SiBlender, SiCanva, SiAdobeillustrator } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiBlender, SiCanva, SiAdobeillustrator, SiNextdotjs } from "react-icons/si";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
 
 const languagesAndFrameworks = [
@@ -33,6 +34,7 @@ const languagesAndFrameworks = [
   { name: "Python", icon: <FaPython className="h-8 w-8 text-yellow-500" /> },
   { name: "C#", icon: <TbBrandCSharp className="h-8 w-8 text-purple-600" /> },
   { name: "SQL", icon: <TbSql className="h-8 w-8 text-blue-600" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="h-8 w-8 text-black dark:text-white" /> },
 ];
 
 const toolsAndTechnologies = [
@@ -45,6 +47,7 @@ const toolsAndTechnologies = [
   },
   { name: "Canva", icon: <SiCanva className="h-8 w-8 text-purple-400" /> },
   { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="h-8 w-8 text-orange-900" /> },
+  { name: "WordPress", icon: <FaWordpress className="h-8 w-8 text-blue-700" /> },
 ];
 
 const SkillCard = ({ name, icon }: { name: string; icon: React.ReactNode }) => (
@@ -62,7 +65,7 @@ export default function AboutSection() {
           Skills & Tools
         </h2>
         <p className="mb-16 text-center text-sm text-gray-600 dark:text-gray-400">
-          Berikut adalah keterampilan dan alat yang saya kuasai.
+          Berikut adalah keterampilan dan alat yang saya kuasai dan pelajari.
         </p>
 
         <div className="mt-8">

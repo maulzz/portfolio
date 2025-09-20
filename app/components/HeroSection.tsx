@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { FaInstagram, FaWhatsapp, FaLinkedin,FaGithub } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaLinkedin,FaGithub,FaMedium } from "react-icons/fa";
 
 const SocialIcon = ({
   href,
@@ -58,6 +58,9 @@ export default function HeroSection() {
             </SocialIcon>
             <SocialIcon href="https://github.com/maulzz">
               <FaGithub size={28} />
+            </SocialIcon>
+            <SocialIcon href="https://medium.com/@wildanmaulana95914">
+              <FaMedium size={28} />
             </SocialIcon>
           </div>
         </div>

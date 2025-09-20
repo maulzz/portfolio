@@ -1,7 +1,7 @@
 // src/components/Footer.tsx
 
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp, FaMedium } from 'react-icons/fa';
 
 const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
   <a
@@ -28,6 +28,7 @@ export default function Footer() {
           <SocialLink href="https://linkedin.com/in/maulzz_studev" icon={<FaLinkedin size={24} />} />
           <SocialLink href="https://instagram.com/maulzz" icon={<FaInstagram size={24} />} />
           <SocialLink href="https://wa.me/6285974905465" icon={<FaWhatsapp size={24} />} />
+          <SocialLink href="https://medium.com/@wildanmaulana95914" icon={<FaMedium size={24} />} />
         </div>
       </div>
     </footer>
