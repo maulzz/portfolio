@@ -29,7 +29,7 @@ const datapendidikan = [
     tahun: "2025-now",
     kota: "Magelang,Jawa Tengah",
     status: "Belum Lulus",
-    learnings: ["basic algorithms & programming"],
+    learnings: ["basic algorithms & programming", "Web Development" ],
   },
 ];
 
@@ -62,6 +62,16 @@ const datapengalaman = [
       "2D & 3D Game Development",
       "2D & 3D Design",
       "Manajemen Waktu",
+    ],
+  },{
+    nama: "Web Deeloper di SSC Universitas Tidar",
+    posisi: "Web Developer",
+    tahun: "2025-now",
+    kota: "Magelang,Jawa Tengah",
+    deskripsi:
+      "Bekerja sebagai Web Developer di SSC Universitas Tidar, berkontribusi dalam pengembangan web.",
+    learnings: [
+      "WordPress",
     ],
   },
 ];
