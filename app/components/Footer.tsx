@@ -25,8 +25,8 @@ export default function Footer() {
         {/* Ikon Sosial Media */}
         <div className="flex gap-4">
           <SocialLink href="https://github.com/maulzz" icon={<FaGithub size={24} />} />
-          <SocialLink href="https://linkedin.com/in/maulzz_studev" icon={<FaLinkedin size={24} />} />
-          <SocialLink href="https://instagram.com/maulzz" icon={<FaInstagram size={24} />} />
+          <SocialLink href="https://linkedin.com" icon={<FaLinkedin size={24} />} />
+          <SocialLink href="https://www.instagram.com/maulzz_studev" icon={<FaInstagram size={24} />} />
           <SocialLink href="https://wa.me/6285974905465" icon={<FaWhatsapp size={24} />} />
           <SocialLink href="https://medium.com/@wildanmaulana95914" icon={<FaMedium size={24} />} />
         </div>
