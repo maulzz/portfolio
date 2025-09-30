@@ -13,16 +13,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import { projectsData } from "@/app/data/projects"; // Import data dari file terpusat
-import { ArrowLeftIcon } from "@heroicons/react/24/solid"; // <-- Import Ikon Panah
-import { FaCalendarAlt } from "react-icons/fa"; // <-- Import Ikon Kalender
-
+import { projectsData } from "@/app/data/projects";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import { FaCalendarAlt } from "react-icons/fa";
 export default function ProjectDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const project = projectsData.find((p) => p.slug === params.slug);
+  const { slug } = React.use(params);
+  const project = projectsData.find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -35,7 +35,7 @@ export default function ProjectDetailPage({
   return (
     <div className="container mx-auto max-w-4xl py-14 px-4">
       <Link
-        href="/#projects"
+        href="/projects"
         className="mb-8 inline-flex items-center gap-2 text-neutral-500 transition-colors hover:text-orange-500 dark:text-neutral-400"
       >
         <ArrowLeftIcon className="h-5 w-5" />
@@ -89,6 +89,21 @@ export default function ProjectDetailPage({
             </span>
           ))}
         </div>
+      </div>
+
+      <div className="my-8 flex justify-end">
+        {project.link && (
+          <div className="mt-4">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600 rounded-lg cursor-pointer"
+            >
+              Kunjungi Website
+            </a>
+          </div>
+        )}
       </div>
 
       <div>

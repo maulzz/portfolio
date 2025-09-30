@@ -29,7 +29,7 @@ const datapendidikan = [
     tahun: "2025-now",
     kota: "Magelang,Jawa Tengah",
     status: "Belum Lulus",
-    learnings: ["basic algorithms & programming", "Web Development" ],
+    learnings: ["basic algorithms & programming", "Web Development"],
   },
 ];
 
@@ -49,7 +49,7 @@ const datapengalaman = [
       "Manajemen Proyek",
     ],
   },
-    {
+  {
     nama: "Magang di PT teknoreka",
     posisi: "Game Development",
     tahun: "2024-2025",
@@ -63,16 +63,15 @@ const datapengalaman = [
       "2D & 3D Design",
       "Manajemen Waktu",
     ],
-  },{
-    nama: "Web Deeloper di SSC Universitas Tidar",
+  },
+  {
+    nama: "Web Developer di SSC Universitas Tidar",
     posisi: "Web Developer",
     tahun: "2025-now",
     kota: "Magelang,Jawa Tengah",
     deskripsi:
       "Bekerja sebagai Web Developer di SSC Universitas Tidar, berkontribusi dalam pengembangan web.",
-    learnings: [
-      "WordPress",
-    ],
+    learnings: ["WordPress"],
   },
 ];
 
@@ -83,12 +82,14 @@ export default function EducationSection() {
       className="py-24 bg-gray-100 dark:bg-neutral-800/20"
     >
       <div className="container mx-auto px-8 sm:px-20">
-        <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
-          Pendidikan & Pengalaman
-        </h2>
-        <p className="mb-16 text-center text-sm text-gray-600 dark:text-gray-400">
-          Berikut adalah riwayat pendidikan dan pengalaman saya.
-        </p>
+        <div className="mb-16 text-center" data-aos="zoom-in">
+          <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Pendidikan & Pengalaman
+          </h2>
+          <p className=" text-sm text-gray-600 dark:text-gray-400">
+            Berikut adalah riwayat pendidikan dan pengalaman saya.
+          </p>
+        </div>
 
         <div className="relative pl-8">
           <div className="absolute left-4 top-0 h-full w-0.5 bg-gray-200/70 dark:bg-neutral-700/70 md:left-6"></div>
@@ -97,7 +98,10 @@ export default function EducationSection() {
             <div key={index} className="relative mb-12 pl-8 md:pl-12">
               <div className="absolute -left-1.5 top-1 h-4 w-4 rounded-full border-4 border-orange-500 bg-orange-500 dark:border-gray-900 md:-left-3.5"></div>
 
-              <div className="w-full rounded-lg bg-gray-200/70 p-6 shadow-lg dark:bg-neutral-700/70 md:w-3/4">
+              <div
+                className="w-full rounded-lg bg-gray-200/70 p-6 shadow-lg dark:bg-neutral-700/70 md:w-3/4"
+                data-aos="fade-up"
+              >
                 <div className="mb-2 flex items-center justify-between">
                   <a
                     href={edu.link}
@@ -161,7 +165,10 @@ export default function EducationSection() {
             <div key={index} className="relative mb-12 pl-8 md:pl-12">
               <div className="absolute -left-1.5 top-1 h-4 w-4 rounded-full border-4 border-orange-500 bg-orange-500 dark:border-gray-900 md:-left-3.5"></div>
 
-              <div className="w-full rounded-lg bg-gray-200/70 p-6 shadow-lg dark:bg-neutral-700/70 md:w-3/4">
+              <div
+                className="w-full rounded-lg bg-gray-200/70 p-6 shadow-lg dark:bg-neutral-700/70 md:w-3/4"
+                data-aos="fade-up"
+              >
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
                     {exp.nama}

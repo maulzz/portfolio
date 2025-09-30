@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-12 ">
+    <section id="about" className="py-12" data-aos="zoom-in">
       <div className="container mx-auto px-8 sm:px-20">
         <div className="bg-gray-100 dark:bg-neutral-800/40 py-10 rounded-xl shadow-2xl">
           <h2 className="mb-8 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">

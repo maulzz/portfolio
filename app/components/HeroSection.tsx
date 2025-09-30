@@ -27,26 +27,27 @@ export default function HeroSection() {
     <section id="hero" className="container mx-auto flex min-h-screen items-center px-8 sm:px-20">
       <div className="flex w-full flex-col-reverse items-center gap-12 md:flex-row">
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl font-bold md:text-6xl">
+          <div data-aos="fade-up"></div>
+          <h1 className="text-4xl font-bold md:text-6xl" data-aos="fade-up">
             Hi, i'm
             <span className="text-orange-500"> Wildan Maulana</span> Junior
             Developer
           </h1>
-          <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+          <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400" data-aos="fade-right" data-aos-delay="300">
             Saya adalah seorang junior developer dan mahasiswa Teknologi
             Informasi yang bersemangat dalam membangun solusi digital yang
             fungsional dan menarik secara visual.
           </p>
 
-          <div className="mt-8 flex justify-center gap-4 md:justify-start">
+          <div className="mt-8 flex justify-center gap-4 md:justify-start" data-aos="fade-left" data-aos-delay="400">
             <Link href="#">
-              <button className="bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600 rounded-lg">
+              <button className="bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600 rounded-lg cursor-pointer">
                 Download CV
               </button>
             </Link>
           </div>
 
-          <div className="mt-8 flex justify-center gap-6 md:justify-start">
+          <div className="mt-5 flex justify-center gap-6 md:justify-start" data-aos="fade-up" data-aos-delay="500">
             <SocialIcon href="https://instagram.com/maulzz_studev">
               <FaInstagram size={28} />
             </SocialIcon>
@@ -65,7 +66,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-1 items-center justify-center">
+        <div className="flex flex-1 items-center justify-center" data-aos="zoom-out" data-aos-delay="700">
           <div className="relative">
             <Image
               src="/images/foto1.svg"

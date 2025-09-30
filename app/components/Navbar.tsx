@@ -18,7 +18,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 py-4 px-4 sm:px-12 ">
+    <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-12 ">
       <div className="container mx-auto flex items-center justify-between rounded-2xl bg-white/70 py-3 px-7 shadow-2xl backdrop-blur-sm dark:bg-gray-800/70">
         <Link href="/" className="text-xl font-bold text-gray-900 dark:text-gray-100">
           Maulzz_Dev
@@ -34,7 +34,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="#contact">
-            <button className="rounded-full bg-orange-500 px-4 py-2 font-bold text-white transition-colors hover:bg-orange-600">
+            <button className="rounded-full bg-orange-500 px-4 py-2 font-bold text-white transition-colors hover:bg-orange-600 cursor-pointer">
               Contact
             </button>
           </Link>

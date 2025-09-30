@@ -11,10 +11,17 @@ import {
   FaPython,
   FaGitAlt,
   FaUnity,
-  FaWordpress
+  FaWordpress,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiMysql, SiBlender, SiCanva, SiAdobeillustrator, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiMysql,
+  SiBlender,
+  SiCanva,
+  SiAdobeillustrator,
+  SiNextdotjs,
+} from "react-icons/si";
 import { TbBrandCSharp, TbSql } from "react-icons/tb";
 
 const languagesAndFrameworks = [
@@ -34,7 +41,10 @@ const languagesAndFrameworks = [
   { name: "Python", icon: <FaPython className="h-8 w-8 text-yellow-500" /> },
   { name: "C#", icon: <TbBrandCSharp className="h-8 w-8 text-purple-600" /> },
   { name: "SQL", icon: <TbSql className="h-8 w-8 text-blue-600" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="h-8 w-8 text-black dark:text-white" /> },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="h-8 w-8 text-black dark:text-white" />,
+  },
 ];
 
 const toolsAndTechnologies = [
@@ -46,8 +56,14 @@ const toolsAndTechnologies = [
     icon: <FaUnity className="h-8 w-8 text-gray-800 dark:text-gray-200" />,
   },
   { name: "Canva", icon: <SiCanva className="h-8 w-8 text-purple-400" /> },
-  { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="h-8 w-8 text-orange-900" /> },
-  { name: "WordPress", icon: <FaWordpress className="h-8 w-8 text-blue-700" /> },
+  {
+    name: "Adobe Illustrator",
+    icon: <SiAdobeillustrator className="h-8 w-8 text-orange-900" />,
+  },
+  {
+    name: "WordPress",
+    icon: <FaWordpress className="h-8 w-8 text-blue-700" />,
+  },
 ];
 
 const SkillCard = ({ name, icon }: { name: string; icon: React.ReactNode }) => (
@@ -61,16 +77,21 @@ export default function AboutSection() {
   return (
     <section id="skills" className="py-24 ">
       <div className="container mx-auto px-8 sm:px-20">
-        <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
-          Skills & Tools
-        </h2>
-        <p className="mb-16 text-center text-sm text-gray-600 dark:text-gray-400">
-          Berikut adalah keterampilan dan alat yang saya kuasai dan pelajari.
-        </p>
+        <div className="mb-16 text-center" data-aos="zoom-in">
+          <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Skills & Tools
+          </h2>
+          <p className=" text-sm text-gray-600 dark:text-gray-400">
+            Berikut adalah keterampilan dan alat yang saya kuasai dan pelajari.
+          </p>
+        </div>
 
         <div className="mt-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl">
+            <div
+              className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl"
+              data-aos="fade-right"
+            >
               <h3 className="mb-6 text-center text-2xl font-bold md:text-left">
                 Bahasa & Framework
               </h3>
@@ -85,7 +106,10 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl">
+            <div
+              className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl"
+              data-aos="fade-left"
+            >
               <h3 className="mb-6 text-center text-2xl font-bold md:text-left">
                 Teknologi & Aplikasi
               </h3>

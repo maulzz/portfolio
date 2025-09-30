@@ -3,7 +3,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -16,7 +22,7 @@ export default function ContactSection() {
     setResult("Mengirim....");
     const formData = new FormData(event.currentTarget);
 
-    formData.append("access_key" , process.env.NEXT_PUBLIC_W3F_ACCESS_KEY!);
+    formData.append("access_key", process.env.NEXT_PUBLIC_W3F_ACCESS_KEY!);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -39,26 +45,29 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 ">
       <div className="container mx-auto px-8 sm:px-20">
-        <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
-          Mari Terhubung
-        </h2>
-        <p className="mb-16 text-center text-sm text-gray-600 dark:text-gray-400">
-          Saya selalu terbuka untuk diskusi mengenai proyek baru, peluang
-          kolaborasi, atau sekadar untuk menyapa. Jangan ragu untuk menghubungi
-          saya.
-        </p>
+        <div className="mb-16 text-center" data-aos="zoom-in">
+          <h2 className="mb-2 text-center text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Mari Terhubung
+          </h2>
+          <p className=" text-sm text-gray-600 dark:text-gray-400">
+            Saya selalu terbuka untuk diskusi mengenai proyek baru, peluang
+            kolaborasi, atau sekadar untuk menyapa. Jangan ragu untuk
+            menghubungi saya.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <div className="flex flex-col gap-4 bg-gray-100 shadow-md dark:bg-neutral-800/40 p-4 rounded-lg">
-          <h1 className="font-bold text-2xl ">Hubungi dibawah ini</h1>
+          <div className="flex flex-col gap-4 bg-gray-100 shadow-md dark:bg-neutral-800/40 p-4 rounded-lg" data-aos="fade-right">
+            <h1 className="font-bold text-2xl ">Hubungi dibawah ini</h1>
             <a
-              href="mailto:wildanmh515@gmail.com" target="_blank"
+              href="mailto:wildanmh515@gmail.com"
+              target="_blank"
               className="flex items-center gap-4 rounded-lg bg-gray-200 p-4 transition-colors hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-gray-700"
             >
               <FaEnvelope className="h-6 w-6 text-orange-500" />
               <span>wildanmh515@gmail.com</span>
             </a>
-            
+
             <a
               href="https://instagram.com/maulzz_studev"
               target="_blank"
@@ -97,8 +106,11 @@ export default function ContactSection() {
             </a>
           </div>
 
-          <div>
-            <form onSubmit={onSubmit} className="flex flex-col shadow-md gap-4 bg-gray-100 dark:bg-neutral-800/40 p-4 rounded-lg">
+          <div data-aos="fade-left">
+            <form
+              onSubmit={onSubmit}
+              className="flex flex-col shadow-md gap-4 bg-gray-100 dark:bg-neutral-800/40 p-4 rounded-lg"
+            >
               <div>
                 <label htmlFor="name" className="mb-2 block font-semibold">
                   Nama
@@ -143,7 +155,7 @@ export default function ContactSection() {
               </div>
               <button
                 type="submit"
-                className="rounded-lg bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600"
+                className="rounded-lg bg-orange-500 px-6 py-3 font-bold text-white transition-colors hover:bg-orange-600 cursor-pointer"
               >
                 Kirim Pesan
               </button>
