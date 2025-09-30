@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
 
-
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
