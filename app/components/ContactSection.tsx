@@ -57,7 +57,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <div className="flex flex-col gap-4 bg-gray-100 shadow-md dark:bg-neutral-800/40 p-4 rounded-lg" data-aos="fade-right">
+          <div className="flex flex-col gap-4 bg-gray-100 shadow-md dark:bg-neutral-800/40 p-4 rounded-lg" data-aos="fade-up">
             <h1 className="font-bold text-2xl ">Hubungi dibawah ini</h1>
             <a
               href="mailto:wildanmh515@gmail.com"
@@ -106,7 +106,7 @@ export default function ContactSection() {
             </a>
           </div>
 
-          <div data-aos="fade-left">
+          <div data-aos="fade-up">
             <form
               onSubmit={onSubmit}
               className="flex flex-col shadow-md gap-4 bg-gray-100 dark:bg-neutral-800/40 p-4 rounded-lg"

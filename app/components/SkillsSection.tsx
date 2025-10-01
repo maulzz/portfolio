@@ -90,7 +90,7 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div
               className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl"
-              data-aos="fade-right"
+              data-aos="fade-up"
             >
               <h3 className="mb-6 text-center text-2xl font-bold md:text-left">
                 Bahasa & Framework
@@ -108,7 +108,7 @@ export default function AboutSection() {
 
             <div
               className="bg-gray-100 dark:bg-neutral-800/40 p-7 rounded-xl shadow-2xl"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               <h3 className="mb-6 text-center text-2xl font-bold md:text-left">
                 Teknologi & Aplikasi
